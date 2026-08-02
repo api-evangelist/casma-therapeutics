@@ -1,0 +1,38 @@
+# Casma Therapeutics
+
+> Clinical-stage biotechnology company founded in 2018 and headquartered in Boston, MA, developing cellular degradation medicines built on the autophagy pathway. Its PHLYT (Phagosome-Lysosome Targeting) platform initiates target-specific autophagic degradation of disease targets independent of size or complexity — organelles, protein aggregates and large signaling complexes — across oncology, inflammation, neurodegeneration and metabolic disease.
+
+Casma Therapeutics publishes no public developer API, developer portal, SDK, MCP server or machine-readable API contract. This file describes the company's public web surface only.
+
+## Company
+
+- [Casma Therapeutics](https://www.casmatx.com/): Company home page.
+- [About us](https://www.casmatx.com/about/): Founding, mission, vision, and company story.
+- [The science: autophagy](https://www.casmatx.com/science/): How autophagy works and why it matters therapeutically.
+- [Platform & pipeline](https://www.casmatx.com/platform-pipeline/): The PHLYT platform and program pipeline.
+- [Our team](https://www.casmatx.com/our-team/): Leadership and scientific team.
+- [Investors](https://www.casmatx.com/investors/): Investor information.
+- [Careers & culture](https://www.casmatx.com/careers-culture/): Open roles and company culture.
+
+## News
+
+- [News & media](https://www.casmatx.com/news-media/): Press releases and company announcements.
+
+## Legal
+
+- [Privacy Policy](https://www.casmatx.com/privacy-policy/)
+- [Terms of use](https://www.casmatx.com/terms-of-use/)
+
+## Contact
+
+- [Contact us](https://www.casmatx.com/contact-us/): Casma Therapeutics, Inc, 201 Brookline Ave, Suite 1401, Boston, MA 02215 — contact@casmatx.com
+
+## Catalog
+
+- [APIs.json](https://raw.githubusercontent.com/api-evangelist/casma-therapeutics/refs/heads/main/apis.yml): API Evangelist network profile for Casma Therapeutics.
+
+<!--
+generated: 2026-08-02
+method: generated
+source: apis.yml + https://www.casmatx.com/ (searched /llms.txt returned HTTP 404)
+-->

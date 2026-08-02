@@ -1,0 +1,57 @@
+generated: '2026-08-02'
+method: probed
+source: live GET of /.well-known/* and contract-discovery paths on casmatx.com
+host: https://www.casmatx.com
+note: >-
+  Casma Therapeutics publishes no /.well-known/ discovery surface. Every path below
+  returned HTTP 404 from the WordPress site. No document was saved and no WellKnown
+  or SecurityTxt pointer is wired in apis.yml, because nothing was found. This file
+  is a negative probe record, retained so later rounds do not re-probe blindly.
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+- path: /.well-known/agent-card.json
+  status: 404
+- path: /.well-known/agent.json
+  status: 404
+contract_discovery:
+  note: >-
+    STEP 0b contract discovery run in full. No OpenAPI, Swagger, GraphQL, AsyncAPI,
+    MCP or A2A surface exists. Casma is a private clinical-stage biotech with a
+    marketing site only; there is no API host, no docs host and no developer portal.
+    Note that "API" in this company's sector search results means Active
+    Pharmaceutical Ingredient, not a web API.
+  paths_probed:
+  - path: https://www.casmatx.com/openapi.json
+    status: 404
+  - path: https://www.casmatx.com/llms.txt
+    status: 404
+  - path: https://www.casmatx.com/robots.txt
+    status: 200
+  - path: https://www.casmatx.com/sitemap.xml
+    status: 200
+  hosts_probed:
+  - host: api.casmatx.com
+    status: dns-nxdomain
+  - host: docs.casmatx.com
+    status: dns-nxdomain
+  - host: developer.casmatx.com
+    status: dns-nxdomain
+  - host: developers.casmatx.com
+    status: dns-nxdomain
+  - host: status.casmatx.com
+    status: dns-nxdomain
+  - host: trust.casmatx.com
+    status: dns-nxdomain
+  github_organization: none found
+x-evidence:
+  fetched: '2026-08-02'
+  method: curl -sIL, follow redirects, 20s timeout

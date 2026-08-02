@@ -1,7 +1,17 @@
 aid: casma-therapeutics
 name: Casma Therapeutics
-description: 'Casma Therapeutics is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+description: 'Casma Therapeutics is a privately held clinical-stage biotechnology company
+  founded in 2018 and headquartered at 201 Brookline Ave, Suite 1401, Boston, MA. Casma
+  develops novel cellular degradation medicines built on the autophagy pathway — the
+  conserved process cells use to clear damaged components. Its PHLYT (Phagosome-Lysosome
+  Targeting) platform initiates target-specific autophagic degradation of disease targets
+  independent of size or complexity, reaching beyond single proteins to organelles,
+  protein aggregates and large signaling complexes, with programs spanning oncology,
+  inflammation, neurodegeneration and metabolic disease. Casma was named to the Fierce
+  15 list in 2019. The company publishes no public developer API, developer portal,
+  SDKs or machine-readable API contract; it is catalogued here as a company profile
+  only.'
+image: https://www.casmatx.com/wp-content/themes/casma/images/brand-logo.svg
 url: https://raw.githubusercontent.com/api-evangelist/casma-therapeutics/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -10,8 +20,20 @@ x-tier-reason: harvest
 specificationVersion: '0.20'
 created: '2026-08-02'
 modified: '2026-08-02'
+x-enrichment:
+  date: '2026-08-02'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
 tags:
 - Company
+- Biotechnology
+- Pharmaceuticals
+- Life Sciences
+- Drug Discovery
+- Therapeutics
+- Autophagy
+- Health
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +41,33 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/casma-therapeutics-domain-security.yml
+- type: LLMsTxt
+  url: llms/casma-therapeutics-llms.txt
 - type: Website
+  url: https://www.casmatx.com/
+- type: About
+  url: https://www.casmatx.com/about/
+- type: Contact
+  url: https://www.casmatx.com/contact-us/
+- type: Blog
+  url: https://www.casmatx.com/news-media/
+- type: PrivacyPolicy
+  url: https://www.casmatx.com/privacy-policy/
+- type: TermsOfService
+  url: https://www.casmatx.com/terms-of-use/
+- type: Careers
+  url: https://www.casmatx.com/careers-culture/
+- type: Investors
+  url: https://www.casmatx.com/investors/
+- type: Team
+  url: https://www.casmatx.com/our-team/
+- type: Science
+  url: https://www.casmatx.com/science/
+- type: Pipeline
+  url: https://www.casmatx.com/platform-pipeline/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/casma-tx
+- type: SecondaryMarket
   url: https://forgeglobal.com/casma-therapeutics_stock/
