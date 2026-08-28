@@ -11,6 +11,17 @@ description: 'Casma Therapeutics is a privately held clinical-stage biotechnolog
   15 list in 2019. The company publishes no public developer API, developer portal,
   SDKs or machine-readable API contract; it is catalogued here as a company profile
   only.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://www.casmatx.com/wp-content/themes/casma/images/brand-logo.svg
 url: https://raw.githubusercontent.com/api-evangelist/casma-therapeutics/refs/heads/main/apis.yml
 x-type: company
