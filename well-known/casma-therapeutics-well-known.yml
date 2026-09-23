@@ -2,33 +2,15 @@ generated: '2026-08-02'
 method: probed
 source: live GET of /.well-known/* and contract-discovery paths on casmatx.com
 host: https://www.casmatx.com
-note: >-
-  Casma Therapeutics publishes no /.well-known/ discovery surface. Every path below
-  returned HTTP 404 from the WordPress site. No document was saved and no WellKnown
-  or SecurityTxt pointer is wired in apis.yml, because nothing was found. This file
-  is a negative probe record, retained so later rounds do not re-probe blindly.
-documents:
-- path: /.well-known/security.txt
-  status: 404
-- path: /.well-known/openid-configuration
-  status: 404
-- path: /.well-known/oauth-authorization-server
-  status: 404
-- path: /.well-known/api-catalog
-  status: 404
-- path: /.well-known/ai-plugin.json
-  status: 404
-- path: /.well-known/agent-card.json
-  status: 404
-- path: /.well-known/agent.json
-  status: 404
+note: Casma Therapeutics publishes no /.well-known/ discovery surface. Every path below returned HTTP
+  404 from the WordPress site. No document was saved and no WellKnown or SecurityTxt pointer is wired
+  in apis.yml, because nothing was found. This file is a negative probe record, retained so later rounds
+  do not re-probe blindly.
 contract_discovery:
-  note: >-
-    STEP 0b contract discovery run in full. No OpenAPI, Swagger, GraphQL, AsyncAPI,
-    MCP or A2A surface exists. Casma is a private clinical-stage biotech with a
-    marketing site only; there is no API host, no docs host and no developer portal.
-    Note that "API" in this company's sector search results means Active
-    Pharmaceutical Ingredient, not a web API.
+  note: STEP 0b contract discovery run in full. No OpenAPI, Swagger, GraphQL, AsyncAPI, MCP or A2A surface
+    exists. Casma is a private clinical-stage biotech with a marketing site only; there is no API host,
+    no docs host and no developer portal. Note that "API" in this company's sector search results means
+    Active Pharmaceutical Ingredient, not a web API.
   paths_probed:
   - path: https://www.casmatx.com/openapi.json
     status: 404
@@ -55,3 +37,25 @@ contract_discovery:
 x-evidence:
   fetched: '2026-08-02'
   method: curl -sIL, follow redirects, 20s timeout
+hosts:
+- host: https://www.casmatx.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+x-shape-fix:
+  converted: '2026-08-20'
+  from: documents
+  note: Rewritten into hosts[] -> documents[], the only shape well_known_docs() in score.rb reads. A served
+    .well-known surface recorded in any other shape scores as absent.
